@@ -1,0 +1,275 @@
+*{
+    color: #776B5D;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#F3EEEA ;
+}
+
+/* Header start */
+
+header{
+    background-color: #EBE3D5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div{
+    z-index: 1;
+    text-align:center;
+}
+
+#name {
+    font-size:75px;
+    font-weight: 700; 
+}
+
+#certifacate{
+    font-size:40px;
+}
+
+h2{
+    font-size:50px;
+    font-weight: lighter;
+
+}
+
+
+.photo{
+    width: 590px;
+    height: auto;
+    border-radius: 68px;
+    opacity: 0.7;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    width: 634px;
+    height: auto;
+    left: 100px;
+    top: 35px;
+}
+
+.buttonContactMe{
+    margin-top: 80px;
+    background-color: #776B5D;
+    color: #EBE3D5;
+    border: none;
+    border-radius: 100px;
+    width: 350px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: lighter;   
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;  
+}
+
+.buttonContactMe:hover{
+    background-color: #91816e; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buttonContactMe:active{
+    box-shadow: none;
+}
+
+/* Header end /
+
+/* Information Container start */
+
+.informationContainer {
+    text-align: center;
+    
+}
+
+.hello{
+    margin: 35px;
+}
+
+.background-container{
+    font-size: 40px;
+    margin: 35px;
+    display: inline-block; 
+    background-color: #EBE3D5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    width: 535px; 
+    margin: 0 auto;
+}
+
+hr{
+    position: relative;
+    height: 0;
+    border-top: 4px dashed #EBE3D5;
+    width: 251px;
+    margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+hr::before{
+    content: '';
+    position: absolute;
+    top: -2px; /* Позиция относительно основного контейнера */
+    height: 8px; /* Высота линии (двойная толщина) */
+    width: 100%; /* Ширина линии */
+    border-radius: 2    px; /* Закругление углов (половинная толщина) */
+    background-color: transparent; /* Прозрачный фон для невидимости псевдоэлемента */
+}
+
+/* Information Container end */
+
+/* Skills Conrainer start */
+
+.skillsConrainer h2{
+    text-align: center;
+    margin: 75px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    align-items: center;
+    justify-content:center;
+}
+
+.skillsConrainer img{
+    width: 385px;
+    height: 289px;
+}
+
+.skillsConrainer p{
+    background-color: #EBE3D5;
+    width: 545px;
+    height: 289px;
+    align-content: center;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Skills Conrainer end */
+
+/* Contact Container start */
+.contactContainer{
+    text-align: center;
+}
+
+.contactContainer h2{
+    margin: 35px
+}
+
+.contactContainer p{
+    font-size: 25px; 
+}
+
+.contactContainer button{
+    margin-bottom: 70px;
+}
+
+/* Contact Container end */
+
+/* Footer start */
+footer{
+    background-color: #776B5D;
+    text-align: center;
+    height: 100px;
+}
+
+footer a{
+    color: #fff;
+}
+/* Footer end */
+
+@media (min-width: 390px) and (max-width: 844px) {
+    
+    body{
+        margin: 0px;
+    }
+
+    header{
+        background-color: #EBE3D5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .photo{
+        width: 119px;
+        height: auto;
+        border-radius: 18px;
+        opacity: 0.7;
+    }
+
+    .background{
+        position: absolute;
+        z-index: -1;
+        width: 120px;
+        height: auto;
+        left: 30px;
+        top: 10px;
+    }
+    #name {
+        font-size:20px;
+        font-weight: 700; 
+    }
+    
+    #certifacate{
+        font-size:10px;
+    }
+
+    .buttonContactMe{
+        margin-top: 80px;
+        background-color: #776B5D;
+        color: #EBE3D5;
+        border: none;
+        border-radius: 100px;
+        width: 174px;
+        height: 35px;
+        font-size: 15px;
+        font-weight: lighter;   
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;  
+    }
+
+    .background-container{
+        font-size: 20px;
+        margin: 35px;
+        display: inline-block; 
+        background-color: #EBE3D5;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 25px;
+        width: 300px; 
+        margin: 0 auto;
+    }
+
+    .gridContainer{
+        display: inline-block;
+        margin: 50px;
+        align-content: center;
+        justify-content:center;
+    }
+
+    .skillsConrainer img{
+        width: 324px;
+        height: 230px;
+        align-content: center;  
+    }
+    
+    .skillsConrainer p{
+        background-color: #EBE3D5;
+        width: 285px;
+        height: 285px;
+        align-content: center;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
